@@ -116,7 +116,7 @@ def test_li():
 def test_link():
     soup = BeautifulSoup(open('./about_me_part2.html'), "html.parser")
     try:
-        img = soup.find("a")
+        a = soup.find("a")
     except:
-        img = None
-    assert img is not None
+        a = None
+    assert a is not None
